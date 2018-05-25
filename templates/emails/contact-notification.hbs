@@ -1,0 +1,36 @@
+<h1>Hi Affinity Financial!</h1>
+<p class="text-larger">An enquiry was just submitted to {{brand}}:</p>
+{{#if contact.email}}
+	<p class="text-larger">From
+	{{#if contact.name.full}}
+		<strong>{{contact.name.full}}</strong>
+	{{/if}}
+
+	{{#if contact.email}}
+		(<a href="mailto:{{contact.email}}">{{contact.email}}</a>)
+	{{/if}}
+	</p>
+
+  {{#if contact.phone}}
+    <div class="">
+      Phone Number: <strong>{{{contact.phone}}}</strong>
+    </div>
+	{{/if}}
+
+  {{#if contact.subject}}
+    <div class="">
+      Subject: <strong>{{{contact.subject}}}</strong>
+    </div>
+	{{/if}}
+
+	{{#if contact.message}}
+    <div class="">
+      <div class="">
+        Message:
+      </div>
+      {{{contact.message.html}}}
+    </div>
+	{{/if}}
+
+	<p class="text-muted">Sent {{underscoreFormat contact 'createdAt'}}</p>
+{{/if}}

@@ -1,0 +1,82 @@
+/*------------------------------------*\
+	Services
+\*------------------------------------*/
+
+.service {
+    font-size: 12px;
+    position: relative;
+    padding: 30px 20px 40px 70px;
+    margin: 15px 0px;
+    border: 1px solid $gray-300;
+    height: auto;
+    ul {
+      list-style-type: disc;
+    }
+    @media (min-width: 768px) {
+      height: 260px;
+    }
+    @media (min-width: 1200px) {
+      height: 280px;
+    }
+    @media (min-width: 1300px) {
+      height: 260px;
+    }
+}
+
+/* @media only screen and (min-width: 992px) {
+  .service {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .service {
+    height: 230px;
+  }
+} */
+
+.service i {
+    position: absolute;
+    left: 20px;
+    text-align: center;
+    font-size: 48px;
+    color: $primary;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.service:after {
+    content: "";
+    background-color: #1C1D21;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0%;
+    z-index: -1;
+    -webkit-transition: 0.2s width;
+    transition: 0.2s width;
+}
+
+.service:hover:after {
+    width: 100%;
+}
+
+.service h3 {
+  padding-top: 10px;
+  padding-left: 20px;
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+
+.service:hover h3 {
+    color: #fff;
+}
+
+.service-CN {
+  font-size: 15px;
+}
+
+.service ul {
+  padding-left: 30px;
+}

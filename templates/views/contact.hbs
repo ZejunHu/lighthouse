@@ -1,0 +1,142 @@
+<!-- Header -->
+<header>
+
+	<!-- Nav -->
+	<nav id="nav" class="navbar">
+		<div class="container">
+
+			<div class="navbar-header">
+				<!-- Logo -->
+				<div class="navbar-brand">
+					<a href="/">
+						<img class="logo" src="/images/logo.png" alt="logo">
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Collapse nav button -->
+				<div class="nav-collapse">
+					<span></span>
+				</div>
+				<!-- /Collapse nav button -->
+			</div>
+
+			<!--  Main navigation  -->
+			<ul class="main-nav nav navbar-nav navbar-right">
+				<li><a href="/#home">首页</a></li>
+				<li><a href="/#portfolio">服务与产品</a></li>
+				<li><a href="/#category">解决方案</a></li>
+				<li><a href="/#features">团队优势</a></li>
+				<li><a href="/blog">最新资讯</a></li>
+				<li><a href="#footer">联系我们</a></li>
+				<!-- <ul class="dropdown"> -->
+				<!-- <li><a href="blog-single.html">blog post</a></li> -->
+				<!-- </ul> -->
+			</ul>
+			<!-- /Main navigation -->
+
+		</div>
+	</nav>
+	<!-- /Nav -->
+
+	<!-- header wrapper -->
+	<div class="header-wrapper md-padding">
+		<div class="bg-img" style="background-image: url('/images/contact.jpg'); background-repeat: no-repeat; background-position: 50% 20%; background-attachment: scroll;">
+			<div class="overlay"></div>
+		</div>
+		<div class="container">
+			<h2 class="white-text">免费咨询</h2>
+			<ul class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/">首页</a></li>
+				<li class="breadcrumb-item"><a href="/contact">免费咨询</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /header wrapper -->
+
+</header>
+<!-- /Header -->
+
+<!-- contact form -->
+	<div class="container mt-5 mb-2">
+		<div class="row">
+			<div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+				{{#if contactSubmitted}}
+				<div class="portfolio-modal modal fade in" id="enquiry-form-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: block;">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="close-modal enquiry-form-close" data-dismiss="modal">
+									<div class="lr">
+										<div class="rl"></div>
+									</div>
+								</div>
+								<div class="container">
+									<div class="row">
+										<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+											<div class="modal-body">
+												<!-- Project Details Go Here -->
+												<h2 class="text-uppercase text-center">谢谢！我们会尽快回复！</h2>
+												<div class="text-center">
+													<button class="btn main-btn enquiry-form-close" data-dismiss="modal" type="button">
+														<i class="fa fa-times"></i>
+														关闭</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				{{/if}}
+				<form method="post">
+					<input type="hidden" name="action" value="enquiry">
+          <div class="form-block">
+            <div class="form-group">
+              <label>姓名</label>
+              <input type="text" name="name"  class="form-control" value="{{formData.name}}">
+            </div>
+          </div>
+
+          <div class="form-block">
+            <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+  						<label>邮箱</label>
+  						<input type="email" name="email" class="form-control" value="{{formData.email}}">
+  					</div>
+          </div>
+
+          <div class="form-block">
+  					<div class="form-group">
+  						<label>电话</label>
+  						<input type="text" name="phone" class="form-control" value="{{formData.phone}}">
+  					</div>
+          </div>
+
+          <div class="form-block">
+            <div class="form-group">
+              <label>您所感兴趣的话题</label>
+              <select name="subject" class="form-control">
+                <option value="">请选择</option>
+                {{#each subject}}
+                <option value="{{value}}">{{label}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+
+          <div class="form-block">
+  					<div class="form-group">
+  						<label>留言</label>
+  						<textarea name="message" rows="4" class="form-control">{{formData.message}}</textarea>
+  					</div>
+          </div>
+
+					<div class="form-actions mb-2">
+						<button type="submit" class="btn main-btn mb-2">提交</button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<!-- /contact form -->

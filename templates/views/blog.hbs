@@ -1,0 +1,128 @@
+<!-- Header -->
+<header>
+
+	<!-- Nav -->
+	<nav id="nav" class="navbar">
+		<div class="container">
+
+			<div class="navbar-header">
+				<!-- Logo -->
+				<div class="navbar-brand">
+					<a href="/">
+						<img class="logo" src="/images/logo.png" alt="logo">
+					</a>
+				</div>
+				<!-- /Logo -->
+
+				<!-- Collapse nav button -->
+				<div class="nav-collapse">
+					<span></span>
+				</div>
+				<!-- /Collapse nav button -->
+			</div>
+
+			<!--  Main navigation  -->
+			<ul class="main-nav nav navbar-nav navbar-right">
+				<li><a href="/#home">首页</a></li>
+				<li><a href="/#portfolio">服务与产品</a></li>
+				<li><a href="/#category">解决方案</a></li>
+				<li><a href="/#features">团队优势</a></li>
+				<li><a href="/blog">最新资讯</a></li>
+				<li><a href="#footer">联系我们</a></li>
+				<!-- <ul class="dropdown"> -->
+				<!-- <li><a href="blog-single.html">blog post</a></li> -->
+				<!-- </ul> -->
+			</ul>
+			<!-- /Main navigation -->
+
+		</div>
+	</nav>
+	<!-- /Nav -->
+
+	<!-- header wrapper -->
+	<div class="header-wrapper md-padding" >
+		<!-- style="padding-top: 8rem; padding-bottom: 8rem;" -->
+		<div class="bg-img" style="background-image: url('/images/blog.jpg'); background-repeat: no-repeat; background-position: 50% 20%; background-attachment: scroll;">
+			<div class="overlay"></div>
+		</div>
+
+		<div class="container ">
+			<h2 class="white-text">最新资讯</h2>
+			<ul class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/">首页</a></li>
+				<li class="breadcrumb-item"><a href="/blog">最新资讯</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- /header wrapper -->
+
+</header>
+<!-- /Header -->
+
+<div class="container sm-padding">
+	<div class="row">
+
+		<!-- Aside -->
+		<aside id="aside" class="col-md-3 col-md-push-9">
+
+			<!-- Search -->
+			<div class="widget">
+				<div class="widget-search">
+					<form role="search" action="/blog" method="GET">
+
+							<input class="search-input" type="text" placeholder="搜索" id="keywords" name="keywords">
+							<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+
+					</form>
+				</div>
+			</div>
+			<!-- /Search -->
+
+			<!-- Category -->
+			<div class="widget">
+				<h3 class="title">类别目录</h3>
+				<div class="widget-category">
+					<a href="/blog">全部分类</a>
+					{{# each data.categories }}
+					<a href="{{categoryUrl key}}">{{name}}</a>
+					{{/each}}
+				</div>
+			</div>
+			<!-- /Category -->
+		</aside>
+		<!-- /Aside -->
+
+
+		<div class="col-md-9 col-md-pull-3">
+			<!-- <h4 class="text-weight-normal">Showing {{ data.posts.results.length}} post.</h4> -->
+			<div class="blog">
+				{{# each data.posts.results}}
+				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+					<div class="row">
+						<div class="col-sm-offset-4 col-sm-8">
+							<h3><a href="{{postUrl slug}}">{{{title}}}</a></h3>
+						</div>
+
+						<div class="col-sm-4 post-img-container">
+							{{#if image}}<img src="{{{cloudinaryUrl image crop='fit' }}}" class="img img-responsive">{{/if}}
+						</div>
+						<div class="col-sm-8">
+							<ul class="blog-meta">
+								{{#if author.name.first}}<li><i class="fa fa-user"></i>{{author.name.first}}</li>{{/if}}
+								<li><i class="fa fa-clock-o"></i>{{date publishedDate}}</li>
+								{{#if categories}}<li><i class="fa fa-tags"></i>{{categories.0.name}}</li>{{/if}}
+							</ul>
+							<p>{{{content.brief}}}</p>
+							{{#if content.extended}}<p class="read-more"><a href="{{postUrl slug}}">查看详情</a></p>{{/if}}
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+
+
+
+	</div>
+	{{>pagination}}
+</div>

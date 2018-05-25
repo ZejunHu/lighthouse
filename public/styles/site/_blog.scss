@@ -1,0 +1,50 @@
+/*------------------------------------*\
+	Blog
+\*------------------------------------*/
+
+
+
+.blog {
+    background-color: #FFF;
+    margin: 15px 0px;
+}
+
+.blog .blog-content {
+    padding: 20px 20px 40px;
+}
+
+.blog .blog-meta {
+    margin-bottom: 20px;
+}
+
+.blog .blog-meta li {
+    display: inline-block;
+    font-size: 14px;
+    color: $header;
+    margin-right: 10px;
+}
+
+.blog .blog-meta li i {
+    color: $primary;
+    margin-right: 5px;
+}
+
+.img-blog {
+  width: 100%;
+  height: 18rem;
+  @media (min-width: 400px) {
+    height: 27rem;
+  }
+  @media (min-width: 576px) {
+    height: 36rem;
+  }
+  @media (min-width: 992px) {
+    height: 19rem;
+  }
+  @media (min-width: 1200px) {
+    height: 21rem;
+  }
+  @media (min-width: 1500px) {
+    height: 24rem;
+  }
+}

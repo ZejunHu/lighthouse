@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>Affinity Financial Services Inc</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="/styles/plugin/bootstrap.min.css" />
+
+		<!-- Owl Carousel -->
+		<link type="text/css" rel="stylesheet" href="/styles/plugin/owl.carousel.css" />
+		<link type="text/css" rel="stylesheet" href="/styles/plugin/owl.theme.default.css" />
+
+		<!-- Magnific Popup -->
+		<link type="text/css" rel="stylesheet" href="/styles/plugin/magnific-popup.css" />
+
+		<!-- Font Awesome Icon -->
+		<!-- <link rel="stylesheet" href="/styles/font-awesome/css/font-awesome.min.css"> -->
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="/styles/site.css" />
+
+		{{{isAdminEditorCSS user}}}
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div id="body">
+			<!--
+				Flash messages allow you to display once-off status messages to users, e.g. form
+				validation errors, success messages, etc
+			-->
+			{{#if messages}}
+			<div id="flash-messages" class="container">
+				{{#if messages.info}}
+				<div class="alert alert-info">
+						{{{flashMessages messages.info}}}
+				</div>
+				{{/if}}
+				{{#if messages.success}}
+				<div class="alert alert-success">
+						{{{flashMessages messages.success}}}
+				</div>
+				{{/if}}
+				{{#if messages.warning}}
+				<div class="alert alert-warning">
+						{{{flashMessages messages.warning}}}
+				</div>
+				{{/if}}
+				{{#if messages.error}}
+				<div class="alert alert-danger">
+						{{{flashMessages messages.error}}}
+				</div>
+				{{/if}}
+			</div>
+			{{/if}}
+			<!-- The content block should contain the body of your template's content-->
+			{{{body}}}
+		</div>
+
+		<!-- Footer -->
+	<footer id="footer" class="bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- contact form -->
+				<div class="col-sm-6 col-md-4">
+					<h3 class="white-text">联系我们</h3>
+					{{#if enquirySubmitted}}
+					<div class="portfolio-modal modal fade in" id="contact-form-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: block;">
+				      <div class="modal-dialog">
+				        <div class="modal-content">
+				          <div class="close-modal contact-form-close" data-dismiss="modal">
+				            <div class="lr">
+				              <div class="rl"></div>
+				            </div>
+				          </div>
+				          <div class="container">
+				            <div class="row">
+				              <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
+				                <div class="modal-body">
+				                  <!-- Project Details Go Here -->
+				                  <h2 class="text-uppercase text-center">谢谢！我们会尽快回复！</h2>
+													<div class="text-center">
+														<button class="btn main-btn contact-form-close" data-dismiss="modal" type="button">
+					                    <i class="fa fa-times"></i>
+					                    关闭</button>
+													</div>
+				                </div>
+				              </div>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+					{{/if}}
+					<form class="contact-form" method="post">
+						<input type="hidden" name="action" value="contact">
+						<div class="form-group first-line {{#if validationErrors.name}}has-error{{/if}}">
+							<input type="text" name="name.full"  class="input" placeholder="&#xF007;&nbsp;&nbsp;&nbsp;姓名" value="{{formData.[name.full]}}" style="font-family:Arial, FontAwesome">
+						</div>
+						<div class="form-group first-line first-line-right {{#if validationErrors.email}}has-error{{/if}}">
+							<input type="email" name="email" class="input" placeholder="&#xF0E0;&nbsp;&nbsp;&nbsp;邮箱" value="{{formData.email}}" style="font-family:Arial, FontAwesome">
+						</div>
+						<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+							<textarea name="message" placeholder="留言" class="input" style="font-family:Arial, FontAwesome">{{formData.message}}</textarea>
+						</div>
+						<div class="form-actions">
+							<button type="submit" class="main-btn">发送</button>
+						</div>
+					</form>
+
+				</div>
+				<div class="col-sm-6 col-md-4 white-text footer-infomation">
+					<div class="">
+						<p>地址：3190 Steeles Ave E., Unit 202,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Markham, ON, L3R 1G9</p>
+					</div>
+					<div class="">
+						<p>电话：905.605.7177</p>
+						<p>传真：905.604.7178</p>
+					</div>
+					<div class="">
+						<p>邮箱：wisewealth@hotmail.com</p>
+					</div>
+				</div>
+
+				<!-- /contact form -->
+
+				<div class="col-xs-12 col-md-4 my-2">
+					<div class="row">
+						<p class="text-center white-text">微信公众号：EverwiseWealth 扫描二维码关注我们</p>
+						<div class="col-xs-6 text-center">
+							<img src="/images/公众号二维码.png" class="footer-wechat" alt="wechat">
+						</div>
+						<div class="col-xs-6 text-center">
+							<img src="/images/wechat.png" class="footer-wechat" alt="wechat">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12">
+					<div class="footer-logo text-center">
+						<a href="/">
+							<img src="/images/logo-alt.png" alt="Affinity Financial Service Inc">
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2018. All Rights Reserved. Designed by <a href="http://savvyrocks.ca/" target="_blank">Savvy Media Inc.</a></p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<!-- <div id="back-to-top"></div> -->
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+		{{!--
+			//- jQuery 1.11.3 is included by default, and required by both Bootstrap
+			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
+			//- you can upgrade to 2.1.4 (also bundled) for better performance.
+		--}}
+		<!-- jQuery Plugins -->
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="/js/main.js"></script>
+		{{{isAdminEditorJS user}}}
+	</body>
+</html>

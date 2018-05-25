@@ -1,0 +1,29 @@
+.showcase {
+  .showcase-text {
+    padding: 3rem;
+  }
+  .showcase-img {
+    min-height: 40rem;
+    background-size: cover;
+  }
+  @media (min-width: 768px) {
+    .showcase-text {
+      padding: 7rem;
+    }
+  }
+  ul {
+    list-style-type: disc;
+  }
+  li {
+    margin-left: 1.5rem;
+    font-size: 18px;
+  }
+  h2 {
+    color: $primary;
+  }
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
