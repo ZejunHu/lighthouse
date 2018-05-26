@@ -54,10 +54,10 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 		}).send({
 			to: "wisewealth@hotmail.com",
 			from: {
-				name: 'Affinity Financial',
-				email: 'noreply@wisewealth.com',
+				name: 'Lighthouse Website',
+				email: 'noreply@lighthouse.com',
 			},
-			subject: 'New Contact for Affinity Financial',
+			subject: 'New Enquiry for Lighthouse Website',
 			enquiry: enquiry,
 			brand: brand,
 			layout: false,

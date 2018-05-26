@@ -1,0 +1,77 @@
+// Mixins
+@mixin transition-all() {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@mixin serif-font() {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+@mixin sans-serif-font() {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+///////////////////   Overpass   ////////////////////////
+
+@font-face {
+  font-family: "operpass-bold";
+  src:url("/fonts/Overpass/overpass-bold.otf");
+}
+
+@font-face {
+  font-family: "overpass-extrabold";
+  src:url("/fonts/Overpass/overpass-extrabold.otf");
+}
+
+@font-face {
+  font-family: "overpass-extralight";
+  src:url("/fonts/Overpass/overpass-extralight.otf");
+}
+
+@font-face {
+  font-family: "overpass-heavy";
+  src:url("/fonts/Overpass/overpass-heavy.otf");
+}
+
+@font-face {
+  font-family: "overpass-light";
+  src:url("/fonts/Overpass/overpass-light.otf");
+}
+
+@font-face {
+  font-family: "overpass-regular";
+  src:url("/fonts/Overpass/overpass-regular.otf");
+}
+
+@font-face {
+  font-family: "overpass-semibold";
+  src:url("/fonts/Overpass/overpass-semibold.otf");
+}
+
+@font-face {
+  font-family: "overpass-thin";
+  src:url("/fonts/Overpass/overpass-thin.otf");
+}
+
+///////////////////   Playfair Display   ////////////////////////
+
+@font-face {
+  font-family: "PlayfairDisplay-Black";
+  src:url("/fonts/Playfair Display/PlayfairDisplay-Black.otf");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Bold";
+  src:url("/fonts/Playfair Display/PlayfairDisplay-Bold.otf");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src:url("/fonts/Playfair Display/PlayfairDisplay-Regular.otf");
+}

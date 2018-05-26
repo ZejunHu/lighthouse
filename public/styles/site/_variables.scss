@@ -1,10 +1,18 @@
-// Override Bootstrap variables in this file, e.g.
+// Variables
 
-$font-size-base: 14px;
-$body: #868F9B;
-$header: #10161A;
-$primary: #FBB561;
-$dark: #FCFCFF;
-$gray-100: #F4F4F4;
-$gray-200: #FAFAFA;
-$gray-300: #EEE;
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$black: #232323 !default;
+$red: #EC1C24 !default;
+$gold: #B09953 !default;
+
+$primary: #F05F40 !default;

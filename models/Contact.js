@@ -54,12 +54,13 @@ Contact.schema.methods.sendNotificationEmail = function (callback) {
 			templateName: 'contact-notification',
 			transport: 'mailgun',
 		}).send({
-			to: "wisewealth@hotmail.com",
+			//to: "wisewealth@hotmail.com",
+			to: "wbsxbysharp@gmail.com",
 			from: {
-				name: 'Affinity Financial',
-				email: 'noreply@wisewealth.com',
+				name: 'Lighthouse Website',
+				email: 'noreply@lighthouse.com',
 			},
-			subject: 'New Enquiry for Affinity Financial',
+			subject: 'New Enquiry for Lighthouse Website',
 			contact: contact,
 			brand: brand,
 			layout: false,

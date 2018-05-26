@@ -1,102 +1,75 @@
 (function($) {
-  "use strict"
+  "use strict"; // Start of use strict
 
-  ///////////////////////////
-  // Preloader
-  $(window).on('load', function() {
-    $("#preloader").delay(600).fadeOut();
-  });
-
-  ///////////////////////////
-  // Scrollspy
-  $('body').scrollspy({
-    target: '#nav',
-    offset: $(window).height() / 2
-  });
-
-  ///////////////////////////
-  // Smooth scroll
-  $("#nav .main-nav a[href^='#']").on('click', function(e) {
-    e.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-      scrollTop: $(this.hash).offset().top
-    }, 600);
-  });
-
-  // $('#back-to-top').on('click', function(){
-  // 	$('body,html').animate({
-  // 		scrollTop: 0
-  // 	}, 600);
-  // });
-
-  ///////////////////////////
-  // Btn nav collapse
-  $('#nav .nav-collapse').on('click', function() {
-    $('#nav').toggleClass('open');
-  });
-
-  ///////////////////////////
-  // Mobile dropdown
-  $('.has-dropdown a').on('click', function() {
-    $(this).parent().toggleClass('open-drop');
-  });
-
-  ///////////////////////////
-  // On Scroll
-  $(window).on('scroll', function() {
-    var wScroll = $(this).scrollTop();
-
-    // Fixed nav
-    wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
-
-    // Back To Top Appear
-    // wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
-  });
-
-  ///////////////////////////
-  // magnificPopup
-  $('.work').magnificPopup({
-    delegate: '.lightbox',
-    type: 'image'
-  });
-
-  ///////////////////////////
-  // Owl Carousel
-  $('#about-slider').owlCarousel({
-    items: 1,
-    loop: true,
-    margin: 15,
-    nav: true,
-    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-    dots: true,
-    autoplay: true,
-    animateOut: 'fadeOut'
-  });
-
-  $('#testimonial-slider').owlCarousel({
-    loop: true,
-    margin: 15,
-    dots: true,
-    nav: false,
-    autoplay: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      992: {
-        items: 2
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 57)
+        }, 1000, "easeInOutExpo");
+        return false;
       }
     }
   });
 
-  $('.contact-form-close').click(function() {
-    $('#contact-form-modal').removeClass('in');
-    $('#contact-form-modal').css('display', 'none');
-  });
-  $('.enquiry-form-close').click(function() {
-    $('#enquiry-form-modal').removeClass('in');
-    $('#enquiry-form-modal').css('display', 'none');
+  // Closes responsive menu when a scroll trigger link is clicked
+  $('.js-scroll-trigger').click(function() {
+    $('.navbar-collapse').collapse('hide');
   });
 
-})(jQuery);
+  // Activate scrollspy to add active class to navbar items on scroll
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: 57
+  });
+
+  // Collapse Navbar
+  var navbarCollapse = function() {
+    if ($("#mainNav").offset().top > 100) {
+      $("#mainNav").addClass("navbar-shrink");
+    } else {
+      $("#mainNav").removeClass("navbar-shrink");
+    }
+  };
+  // Collapse now if page is not at top
+  navbarCollapse();
+  // Collapse the navbar when page is scrolled
+  $(window).scroll(navbarCollapse);
+
+  // Scroll reveal calls
+  window.sr = ScrollReveal();
+  sr.reveal('.sr-icons', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px'
+  }, 200);
+  sr.reveal('.sr-button', {
+    duration: 1000,
+    delay: 200
+  });
+  sr.reveal('.sr-contact', {
+    duration: 600,
+    scale: 0.3,
+    distance: '0px'
+  }, 300);
+
+  // Magnific popup calls
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0, 1]
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    }
+  });
+
+})(jQuery); // End of use strict

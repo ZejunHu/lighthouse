@@ -1,6 +1,6 @@
 // Bootstrap
 // =========
-
+@import "bootstrap/bootstrap";
 // Bootstrap can be removed entirely by deleting this line.
 
 
@@ -18,30 +18,11 @@
 // ===========
 
 // Add your own site style includes here
-@import "site/layout";
-@import "site/general";
-@import "site/logo";
-@import "site/navigation";
-@import "site/header";
-@import "site/about";
-@import "site/portfolio";
+@import "site/variables";
+@import "site/mixins";
+@import "site/global";
+@import "site/navbar";
+@import "site/masthead";
 @import "site/services";
-@import "site/why-us";
-@import "site/numbers";
-@import "site/pricing";
-@import "site/testimonial";
-@import "site/team";
-@import "site/blog";
-@import "site/blog-post";
-@import "site/blog-sidebar";
-@import "site/contact";
-@import "site/footer";
-@import "site/responsive";
-@import "site/owl-theme";
-@import "site/back-to-top";
-@import "site/preloader";
-@import "site/space";
-@import "site/label";
-@import "site/form";
-@import "site/category";
-@import "site/showcase";
+@import "site/portfolio";
+@import "site/bootstrap-overrides";
