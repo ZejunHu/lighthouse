@@ -4,18 +4,25 @@
 }
 
 .btn {
+  color: $white;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 300px;
-  @include sans-serif-font;
+  border-radius: 5px;
+  font-family: overpass-bold;
+  letter-spacing: 1px;
+}
+
+.btn-l {
+  padding: 1.2rem 3.2rem;
 }
 
 .btn-xl {
-  padding: 1rem 2rem;
+  padding: 1.2rem 4rem;
 }
 
 .btn-primary {
+
   background-color: $primary;
   border-color: $primary;
   &:hover,

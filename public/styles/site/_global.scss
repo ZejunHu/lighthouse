@@ -9,12 +9,12 @@ body {
   font-family: overpass-extralight;
 }
 
-hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: $primary;
-}
-
+// hr {
+//   max-width: 50px;
+//   border-width: 3px;
+//   border-color: $primary;
+// }
+//
 hr.light {
   border-color: $white;
 }
@@ -48,12 +48,25 @@ h6 {
   color: fade-out($white, .3);
 }
 
+.text-red {
+  color: $red;
+}
+
+.main-content {
+  font-size: 15px;
+  line-height: 25px;
+}
+
 section {
   padding: 8rem 0;
 }
 
 .section-heading {
   margin-top: 0;
+  font-family: PlayfairDisplay-Bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
 }
 
 ::-moz-selection {
