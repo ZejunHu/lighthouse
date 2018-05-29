@@ -1,0 +1,32 @@
+footer {
+  padding-top: 4rem;
+  h4 {
+    font-family: overpass-extrabold;
+    font-size: 13px;
+  }
+  p {
+    font-family: overpass-light;
+    font-size: 13px;
+    line-height: 25px;
+  }
+  i {
+    font-size: 2rem !important;
+    &:hover {
+      color: $white;
+    }
+  }
+  .footer-logo {
+    max-width: 300px;
+    margin: 1rem auto;
+    @media (min-width: 768px) {
+      max-width: 100%;
+    }
+  }
+  .footer-copyright {
+    padding: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $white;
+    background-color: $red;
+  }
+}

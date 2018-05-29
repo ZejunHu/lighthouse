@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 		<title>Lighthouse Development</title>
@@ -71,124 +71,54 @@
 		</div>
 
 		<!-- Footer -->
-	<footer id="footer" class="bg-dark">
-
-		<!-- Container -->
+	<footer id="footer" class="bg-dark text-gold">
 		<div class="container">
-
-			<!-- Row -->
 			<div class="row">
-
-				<!-- contact form -->
-				<div class="col-sm-6 col-md-4">
-					<h3 class="white-text">联系我们</h3>
-					{{#if enquirySubmitted}}
-					<div class="portfolio-modal modal fade in" id="contact-form-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: block;">
-				      <div class="modal-dialog">
-				        <div class="modal-content">
-				          <div class="close-modal contact-form-close" data-dismiss="modal">
-				            <div class="lr">
-				              <div class="rl"></div>
-				            </div>
-				          </div>
-				          <div class="container">
-				            <div class="row">
-				              <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-				                <div class="modal-body">
-				                  <!-- Project Details Go Here -->
-				                  <h2 class="text-uppercase text-center">谢谢！我们会尽快回复！</h2>
-													<div class="text-center">
-														<button class="btn main-btn contact-form-close" data-dismiss="modal" type="button">
-					                    <i class="fa fa-times"></i>
-					                    关闭</button>
-													</div>
-				                </div>
-				              </div>
-				            </div>
-				          </div>
-				        </div>
-				      </div>
-				    </div>
-					{{/if}}
-					<form class="contact-form" method="post">
-						<input type="hidden" name="action" value="contact">
-						<div class="form-group first-line {{#if validationErrors.name}}has-error{{/if}}">
-							<input type="text" name="name.full"  class="input" placeholder="&#xF007;&nbsp;&nbsp;&nbsp;姓名" value="{{formData.[name.full]}}" style="font-family:Arial, FontAwesome">
-						</div>
-						<div class="form-group first-line first-line-right {{#if validationErrors.email}}has-error{{/if}}">
-							<input type="email" name="email" class="input" placeholder="&#xF0E0;&nbsp;&nbsp;&nbsp;邮箱" value="{{formData.email}}" style="font-family:Arial, FontAwesome">
-						</div>
-						<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
-							<textarea name="message" placeholder="留言" class="input" style="font-family:Arial, FontAwesome">{{formData.message}}</textarea>
-						</div>
-						<div class="form-actions">
-							<button type="submit" class="main-btn">发送</button>
-						</div>
-					</form>
-
+				<div class="col-md-6 col-lg-3 text-center py-2">
+					<img src="/images/home/ldg-logo-gold.png" class="footer-logo" alt="Lighthouse">
 				</div>
-				<div class="col-sm-6 col-md-4 white-text footer-infomation">
+				<div class="col-md-6 col-lg-3 py-2">
 					<div class="">
-						<p>地址：3190 Steeles Ave E., Unit 202,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Markham, ON, L3R 1G9</p>
+						<h4 class="text-uppercase">about us</h4>
+						<p>Quo modo autem optimum, si bonum praeterea nullum est? Haec quo modo conveniant, non sane intellego. Quid censes in Latino fore</p>
 					</div>
+					<hr>
 					<div class="">
-						<p>电话：905.605.7177</p>
-						<p>传真：905.604.7178</p>
-					</div>
-					<div class="">
-						<p>邮箱：wisewealth@hotmail.com</p>
+						<h4>FAQ</h4>
 					</div>
 				</div>
-
-				<!-- /contact form -->
-
-				<div class="col-xs-12 col-md-4 my-2">
-					<div class="row">
-						<p class="text-center white-text">微信公众号：EverwiseWealth 扫描二维码关注我们</p>
-						<div class="col-xs-6 text-center">
-							<img src="/images/公众号二维码.png" class="footer-wechat" alt="wechat">
-						</div>
-						<div class="col-xs-6 text-center">
-							<img src="/images/wechat.png" class="footer-wechat" alt="wechat">
+				<div class="col-md-6 col-lg-3 py-2">
+					<h4 class="text-uppercase">contact us</h4>
+					<p>9130 Leslie St, Suite 303<br />Richmond Hill, ON L4B 0B9</p>
+					<hr>
+					<p>Tel: (+1) 905-771-7326<br />Fax: (+1) 905-771-0555</p>
+					<hr>
+					<p>admin@lighthousedevelopment.com</p>
+				</div>
+				<div class="col-md-6 col-lg-3 py-2">
+					<div class="mb-3">
+						<h4>GET INSPIRED BY FOLLOWING US:</h4>
+						<div class="row">
+							<div class="col-4 col-lg-3">
+								<i class="fa fa-facebook-f"></i>
+							</div>
+							<div class="col-4 col-lg-3">
+								<i class="fa fa-twitter"></i>
+							</div>
+							<div class="col-4 col-lg-3">
+								<i class="fa fa-pinterest-p"></i>
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="col-xs-12">
-					<div class="footer-logo text-center">
-						<a href="/">
-							<img src="/images/logo-alt.png" alt="Affinity Financial Service Inc">
-						</a>
+					<div class="">
+						<h4>SIGN UP TO OUR NEWSLETTER:</h4>
 					</div>
 				</div>
 			</div>
-			<!-- /Row -->
-
 		</div>
-		<!-- /Container -->
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<div class="col-md-12">
-
-					<!-- footer copyright -->
-					<div class="footer-copyright">
-						<p>Copyright © 2018. All Rights Reserved. Designed by <a href="http://savvyrocks.ca/" target="_blank">Savvy Media Inc.</a></p>
-					</div>
-					<!-- /footer copyright -->
-
-				</div>
-
-			</div>
-			<!-- /Row -->
-
+		<div class="footer-copyright">
+			<h4 class="m-0">Copyright &copy; 2018 Lighthouse Development Inc. All rights reserved. Privacy / Terms of Use</h4>
 		</div>
-		<!-- /Container -->
-
 	</footer>
 	<!-- /Footer -->
 
@@ -219,7 +149,7 @@
 		<script type="text/javascript" src="/js/jquery.easing.min.js"></script>
 		<script type="text/javascript" src="/js/scrollreveal.min.js"></script>
 		<script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>
-		
+
 		<script type="text/javascript" src="/js/main.js"></script>
 		{{{isAdminEditorJS user}}}
 	</body>

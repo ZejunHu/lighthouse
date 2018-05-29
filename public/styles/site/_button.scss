@@ -14,10 +14,6 @@
     color: darken($white, 10%);
     background-color: darken($red, 5%) !important;
   }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
-  }
 }
 
 .btn-black {
