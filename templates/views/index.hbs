@@ -209,26 +209,68 @@
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="pt-0">
   <div class="container">
+    <h2 class="section-heading section-heading--bigger text-center mb-4">BLOG</h2>
+    <p class="text-uppercase text-center" style="color: #EC1C24; font-family: overpass-regular; letter-spacing: 1px; font-size: 15px;">SINT MODO PARTES VITAE</p>
+
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2 class="section-heading">Let's Get In Touch!</h2>
-        <hr class="my-4">
-        <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+      <div class="col-sm-6 col-lg-3 my-2">
+        <div class="blog-homepage blog-homepage--first" style="background-image: url('/images/home/image.png');">
+          <p class="blog-homepage--first-date">JUNE 15 2016</p>
+          <div class="blog-homepage--first-content">
+            <h3>The startup funding</h3>
+            <a href="#footer">Read more</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 ml-auto text-center">
-        <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-        <p>123-456-6789</p>
+      <div class="col-sm-6 col-lg-3 my-2">
+        <div class="blog-homepage blog-homepage--regular">
+          <img src="/images/home/b1.jpg" class="img-fluid" alt="blog">
+          <div class="blog-homepage--regular-content">
+            <h4>The very first article</h4>
+            <p class="blog-homepage--regular-date">JUNE 15 2016</p>
+            <p class="blog-homepage--regular-content-brief">For one thing they usually step all over the hedges and plants on the side of someone's house killing them...</p>
+            <a href="#footer">Read more</a>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-4 mr-auto text-center">
-        <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
-        <p>
-          <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
-        </p>
+      <div class="col-sm-6 col-lg-3 my-2">
+        <div class="blog-homepage blog-homepage--regular">
+          <img src="/images/home/b2.jpg" class="img-fluid" alt="blog">
+          <div class="blog-homepage--regular-content">
+            <h4>How to do this process</h4>
+            <p class="blog-homepage--regular-date">JUNE 15 2016</p>
+            <p class="blog-homepage--regular-content-brief">For one thing they usually step all over the hedges and plants on the side of someone's house killing them...</p>
+            <a href="#footer">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 my-2">
+        <div class="blog-homepage blog-homepage--regular">
+          <img src="/images/home/b3.jpg" class="img-fluid" alt="blog">
+          <div class="blog-homepage--regular-content">
+            <h4>Marketing in the world</h4>
+            <p class="blog-homepage--regular-date">JUNE 15 2016</p>
+            <p class="blog-homepage--regular-content-brief">For one thing they usually step all over the hedges and plants on the side of someone's house killing them...</p>
+            <a href="#footer">Read more</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript">
+	var largest = 0; //start with 0
+
+	$(".blog-homepage").each(function(){ //loop through each section
+	   var findHeight = $(this).height(); //find the height
+	   if(findHeight > largest){ //see if this height is greater than "largest" height
+	      largest = findHeight; //if it is greater, set largest height to this one
+	   }
+	});
+
+	$(".blog-homepage").css({"height":largest+"px"});
+</script>

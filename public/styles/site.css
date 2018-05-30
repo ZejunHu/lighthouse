@@ -6363,6 +6363,57 @@ header.masthead {
       font-size: 22px;
       letter-spacing: 1px; } }
 
+.blog-homepage {
+  min-height: 400px;
+  height: auto;
+  position: relative; }
+  @media (min-width: 992px) {
+    .blog-homepage {
+      min-height: 320px; } }
+  @media (min-width: 1200px) {
+    .blog-homepage {
+      min-height: 400px; } }
+  .blog-homepage--first {
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1.6rem 1rem; }
+    .blog-homepage--first .blog-homepage--first-date {
+      font-family: overpass-bold;
+      font-size: 12px; }
+    .blog-homepage--first h3 {
+      font-family: PlayfairDisplay-Regular;
+      font-size: 32px;
+      margin-bottom: 2.5rem; }
+      @media (min-width: 768px) {
+        .blog-homepage--first h3 {
+          font-size: 42px;
+          line-height: 55px; } }
+    .blog-homepage--first a {
+      color: #fff;
+      font-family: overpass-bold;
+      font-size: 14px; }
+      .blog-homepage--first a:hover {
+        color: #EC1C24; }
+    .blog-homepage--first .blog-homepage--first-content {
+      position: absolute;
+      bottom: 5%; }
+  .blog-homepage--regular a {
+    font-family: overpass-extralight;
+    font-size: 14px;
+    line-height: 25px;
+    color: #EC1C24; }
+  .blog-homepage--regular h4 {
+    font-family: PlayfairDisplay-Regular;
+    font-size: 23px;
+    margin: 1rem auto; }
+  .blog-homepage--regular .blog-homepage--regular-content {
+    display: block; }
+    .blog-homepage--regular .blog-homepage--regular-content .blog-homepage--regular-date {
+      font-family: overpass-regular;
+      font-size: 15px; }
+
 footer {
   padding-top: 4rem; }
   footer h4 {
