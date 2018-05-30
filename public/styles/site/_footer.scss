@@ -29,4 +29,47 @@ footer {
     color: $white;
     background-color: $red;
   }
+  .footer-newsletter {
+    width: 98%;
+    height: 40px;
+    color: $white;
+    font-family: overpass-extrabold;
+    caret-color: $white;
+    background-color: $black;
+    border: none;
+    border-bottom: 1px solid $white;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      color: $white;
+      font-family: overpass-extrabold;
+    }
+    &:-ms-input-placeholder {
+      color: $white;
+      font-family: overpass-extrabold;
+    }
+    &:-moz-placeholder {
+      color: $white;
+      font-family: overpass-extrabold;
+    }
+    &::-moz-placeholder {
+      color: $white;
+      font-family: overpass-extrabold;
+    }
+  }
+  .footer-btn {
+    border: 2px solid $white;
+    color: $white;
+    background-color: $black;
+    letter-spacing: 1px;
+    font-family: overpass-extrabold;
+    padding: 0.8rem;
+    white-space: nowrap;
+    &:hover {
+      text-decoration: none;
+      color: $gold;
+      background-color: $white;
+    }
+  }
 }

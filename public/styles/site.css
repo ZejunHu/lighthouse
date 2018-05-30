@@ -6388,6 +6388,41 @@ footer {
     text-align: center;
     color: #fff;
     background-color: #EC1C24; }
+  footer .footer-newsletter {
+    width: 98%;
+    height: 40px;
+    color: #fff;
+    font-family: overpass-extrabold;
+    caret-color: #fff;
+    background-color: #232323;
+    border: none;
+    border-bottom: 1px solid #fff; }
+    footer .footer-newsletter:focus {
+      outline: none; }
+    footer .footer-newsletter::-webkit-input-placeholder {
+      color: #fff;
+      font-family: overpass-extrabold; }
+    footer .footer-newsletter:-ms-input-placeholder {
+      color: #fff;
+      font-family: overpass-extrabold; }
+    footer .footer-newsletter:-moz-placeholder {
+      color: #fff;
+      font-family: overpass-extrabold; }
+    footer .footer-newsletter::-moz-placeholder {
+      color: #fff;
+      font-family: overpass-extrabold; }
+  footer .footer-btn {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #232323;
+    letter-spacing: 1px;
+    font-family: overpass-extrabold;
+    padding: 0.8rem;
+    white-space: nowrap; }
+    footer .footer-btn:hover {
+      text-decoration: none;
+      color: #B09953;
+      background-color: #fff; }
 
 /*------------------------------------*\
 	Preloader
