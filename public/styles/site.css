@@ -6312,6 +6312,50 @@ header.masthead {
     header.masthead h1 {
       font-size: 77px; } }
 
+header.masthead-subpage {
+  padding-top: 6rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.masthead-subpage .masthead-container {
+    margin: auto; }
+  header.masthead-subpage .masthead-content {
+    margin: auto; }
+  header.masthead-subpage hr {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  header.masthead-subpage h1 {
+    font-size: 2rem; }
+  header.masthead-subpage p {
+    font-family: overpass-light;
+    font-weight: 300;
+    line-height: 30px; }
+  @media (min-width: 768px) {
+    header.masthead-subpage p {
+      font-size: 1.15rem; } }
+  @media (min-width: 992px) {
+    header.masthead-subpage {
+      height: 60vh;
+      min-height: 400px;
+      padding-top: 0;
+      padding-bottom: 0; }
+      header.masthead-subpage h1 {
+        font-size: 3.6rem; }
+      header.masthead-subpage p {
+        font-size: 20px; }
+      header.masthead-subpage .masthead-container {
+        margin-top: 14rem;
+        margin-bottom: 6rem; }
+      header.masthead-subpage .masthead-content {
+        margin: 2rem auto; } }
+  @media (min-width: 1200px) {
+    header.masthead-subpage h1 {
+      font-size: 77px; } }
+
 .service-box {
   max-width: 400px; }
 
@@ -6571,3 +6615,17 @@ footer {
     background-color: #a08b49 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+.breadcrumb {
+  font-family: overpass-bold;
+  letter-spacing: 1px;
+  background-color: #fff;
+  padding: 3rem; }
+  .breadcrumb a {
+    color: #232323; }
+    .breadcrumb a:hover {
+      color: #EC1C24; }
+  .breadcrumb .active {
+    color: #EC1C24; }
+  .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: ">"; }

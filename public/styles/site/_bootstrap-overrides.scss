@@ -36,3 +36,22 @@
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
   }
 }
+
+.breadcrumb {
+  font-family: overpass-bold;
+  letter-spacing: 1px;
+  background-color: $white;
+  padding: 3rem;
+  a {
+    color: $black;
+    &:hover {
+      color: $red;
+    }
+  }
+  .active {
+    color: $red;
+  }
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+  }
+}

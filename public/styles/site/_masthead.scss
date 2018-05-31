@@ -54,3 +54,59 @@ header.masthead {
     }
   }
 }
+
+// Styling for the masthead
+header.masthead-subpage {
+  padding-top: 6rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  .masthead-container {
+    margin: auto;
+  }
+  .masthead-content {
+    margin: auto;
+  }
+  @include background-cover;
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-family: overpass-light;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.15rem;
+    }
+  }
+  @media (min-width: 992px) {
+    height: 60vh;
+    min-height: 400px;
+    padding-top: 0;
+    padding-bottom: 0;
+    h1 {
+      font-size: 3.6rem;
+    }
+    p {
+      font-size: 20px;
+    }
+    .masthead-container {
+      margin-top: 14rem;
+      margin-bottom: 6rem;
+    }
+    .masthead-content {
+      margin: 2rem auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 77px;
+    }
+  }
+}
