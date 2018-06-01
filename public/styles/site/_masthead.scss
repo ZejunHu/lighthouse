@@ -73,7 +73,8 @@ header.masthead-subpage {
     margin-bottom: 30px;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 58px;
+    font-family: PlayfairDisplay-Bold;
   }
   p {
     font-family: overpass-light;
@@ -91,7 +92,7 @@ header.masthead-subpage {
     padding-top: 0;
     padding-bottom: 0;
     h1 {
-      font-size: 3.6rem;
+      font-size: 58px;
     }
     p {
       font-size: 20px;
@@ -102,11 +103,6 @@ header.masthead-subpage {
     }
     .masthead-content {
       margin: 2rem auto;
-    }
-  }
-  @media (min-width: 1200px) {
-    h1 {
-      font-size: 77px;
     }
   }
 }

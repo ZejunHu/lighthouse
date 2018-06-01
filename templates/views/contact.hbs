@@ -1,142 +1,173 @@
-<!-- Header -->
-<header>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container-fluid">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img src="/images/home/ldg-logo-gold.png" class="navbar-logo-l" alt="Lighthouse Development">
+			<img src="/images/home/ldg-logo.png" class="navbar-logo-s" alt="Lighthouse Development">
+		</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#about">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#services">CUSTOM BUILD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#portfolio">COMMERCIAL</a>
+        </li>
+				<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/">SMARTHOME SYSTEM</a>
+        </li>
+				<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/blog">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/contact">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-	<!-- Nav -->
-	<nav id="nav" class="navbar">
-		<div class="container">
 
-			<div class="navbar-header">
-				<!-- Logo -->
-				<div class="navbar-brand">
-					<a href="/">
-						<img class="logo" src="/images/logo.png" alt="logo">
-					</a>
+<header class="masthead-subpage text-white d-flex" style="background-image: url('/images/contact/contact-header.png')">
+  <div class="container masthead-container">
+    <div class="row">
+      <div class="col-lg-5 masthead-content">
+        <h1 class="px-5 my-4">
+          <strong>Contact us</strong>
+        </h1>
+      </div>
+      <div class="col-lg-7 masthead-content">
+        <p class="px-5 py-2 mt-3">Est, ut dicis, inquit; Quae diligentissime contra Aristonem dicuntur a Chryippo. Ergo, inquit, tibi Q. Quod maxime efficit Theophrasti de beata vita liber, in quo multum admodum fortunae datur.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="#blog" class="py-5">
+	<div class="container blog-blogpage">
+		<div class="row">
+			<div class="col-lg-4 order-lg-2">
+
+				<div class="blog-recent-posts mb-4">
+					<h3>Recent Posts</h3>
+					<div class="blog-recent-posts-link">
+						<a href="#">6 Powerful Tips To Creating Testimonials</a>
+						<a href="#">Effective Advertising Pointers</a>
+						<a href="#">Advertise Advertise Advertise</a>
+						<a href="#">Truck Side Advertising Isn T It Time</a>
+						<a href="#">Direct Mail Advertising How I Made 47</a>
+					</div>
 				</div>
-				<!-- /Logo -->
 
-				<!-- Collapse nav button -->
-				<div class="nav-collapse">
-					<span></span>
-				</div>
-				<!-- /Collapse nav button -->
+        <div class="blog-side-section">
+          <h4>categories</h4>
+          <div class="blog-categories-link">
+            <a href="#">Beauty</a>
+            <a href="#">Lifestyle</a>
+            <a href="#">Music</a>
+          </div>
+        </div>
+
+        <div class="blog-side-section">
+          <h4>tags</h4>
+          <div class="blog-side-tags">
+            <a href="#" class="blog-item-tag">travel</a>
+            <a href="#" class="blog-item-tag">life style</a>
+            <a href="#" class="blog-item-tag">fashion</a>
+            <a href="#" class="blog-item-tag">art</a>
+            <a href="#" class="blog-item-tag">food</a>
+            <a href="#" class="blog-item-tag">beauty</a>
+            <a href="#" class="blog-item-tag">style</a>
+          </div>
+        </div>
 			</div>
 
-			<!--  Main navigation  -->
-			<ul class="main-nav nav navbar-nav navbar-right">
-				<li><a href="/#home">首页</a></li>
-				<li><a href="/#portfolio">服务与产品</a></li>
-				<li><a href="/#category">解决方案</a></li>
-				<li><a href="/#features">团队优势</a></li>
-				<li><a href="/blog">最新资讯</a></li>
-				<li><a href="#footer">联系我们</a></li>
-				<!-- <ul class="dropdown"> -->
-				<!-- <li><a href="blog-single.html">blog post</a></li> -->
-				<!-- </ul> -->
-			</ul>
-			<!-- /Main navigation -->
 
-		</div>
-	</nav>
-	<!-- /Nav -->
-
-	<!-- header wrapper -->
-	<div class="header-wrapper md-padding">
-		<div class="bg-img" style="background-image: url('/images/contact.jpg'); background-repeat: no-repeat; background-position: 50% 20%; background-attachment: scroll;">
-			<div class="overlay"></div>
-		</div>
-		<div class="container">
-			<h2 class="white-text">免费咨询</h2>
-			<ul class="breadcrumb">
-				<li class="breadcrumb-item"><a href="/">首页</a></li>
-				<li class="breadcrumb-item"><a href="/contact">免费咨询</a></li>
-			</ul>
-		</div>
-	</div>
-	<!-- /header wrapper -->
-
-</header>
-<!-- /Header -->
-
-<!-- contact form -->
-	<div class="container mt-5 mb-2">
-		<div class="row">
-			<div class="col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-				{{#if contactSubmitted}}
-				<div class="portfolio-modal modal fade in" id="enquiry-form-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: block;">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="close-modal enquiry-form-close" data-dismiss="modal">
-									<div class="lr">
-										<div class="rl"></div>
-									</div>
-								</div>
-								<div class="container">
-									<div class="row">
-										<div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-											<div class="modal-body">
-												<!-- Project Details Go Here -->
-												<h2 class="text-uppercase text-center">谢谢！我们会尽快回复！</h2>
-												<div class="text-center">
-													<button class="btn main-btn enquiry-form-close" data-dismiss="modal" type="button">
-														<i class="fa fa-times"></i>
-														关闭</button>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+			<div class="col-lg-8 order-lg-1">
+				<div class="blog-post-item">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="/images/blog/bl1.jpg" class="img-fluid blog-item-img" alt="">
+						</div>
+						<div class="col-md-6 blog-item-text">
+							<a href="#" class="blog-item-tag mb-3">art</a>
+							<h4 class="blog-item-title mt-2 mb-3">Why Did Reed Krakoff Walk Away from His Brand?</h4>
+							<p class="blog-item-info my-3">CARRIE CRAWFORD | 2 MIN AGO</p>
+							<p class="blog-item-content-brief my-3">When you browse through videos at YouTube, which do you usually click first: one with around 10 views or one with around 75,000 views?</p>
+							<a href="#" class="btn btn-black btn-with-shadow btn-xl mt-3">discover</a>
 						</div>
 					</div>
-				{{/if}}
-				<form method="post">
-					<input type="hidden" name="action" value="enquiry">
-          <div class="form-block">
-            <div class="form-group">
-              <label>姓名</label>
-              <input type="text" name="name"  class="form-control" value="{{formData.name}}">
-            </div>
-          </div>
+				</div>
 
-          <div class="form-block">
-            <div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-  						<label>邮箱</label>
-  						<input type="email" name="email" class="form-control" value="{{formData.email}}">
-  					</div>
-          </div>
-
-          <div class="form-block">
-  					<div class="form-group">
-  						<label>电话</label>
-  						<input type="text" name="phone" class="form-control" value="{{formData.phone}}">
-  					</div>
-          </div>
-
-          <div class="form-block">
-            <div class="form-group">
-              <label>您所感兴趣的话题</label>
-              <select name="subject" class="form-control">
-                <option value="">请选择</option>
-                {{#each subject}}
-                <option value="{{value}}">{{label}}</option>
-                {{/each}}
-              </select>
-            </div>
-          </div>
-
-          <div class="form-block">
-  					<div class="form-group">
-  						<label>留言</label>
-  						<textarea name="message" rows="4" class="form-control">{{formData.message}}</textarea>
-  					</div>
-          </div>
-
-					<div class="form-actions mb-2">
-						<button type="submit" class="btn main-btn mb-2">提交</button>
+        <div class="blog-post-item">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="/images/blog/bl2.jpg" class="img-fluid blog-item-img" alt="">
+						</div>
+						<div class="col-md-6 blog-item-text">
+							<a href="#" class="blog-item-tag mb-3">life style</a>
+							<h4 class="blog-item-title mt-2 mb-3">Sir Patrick Stewart Answers the Proust Questionnaire</h4>
+							<p class="blog-item-info my-3">CARLEY KEENER | 8 MINT AGO</p>
+							<p class="blog-item-content-brief my-3">When vision becomes cloudy, normally due to age factor, you can suspect cataract. The primary effect of cataract is blurred vision. Then, what is cataract and how does it develop?</p>
+							<a href="#" class="btn btn-black btn-with-shadow btn-xl mt-3">discover</a>
+						</div>
 					</div>
-				</form>
+				</div>
+
+        <div class="blog-post-item">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="/images/blog/bl3.jpg" class="img-fluid blog-item-img" alt="">
+						</div>
+						<div class="col-md-6 blog-item-text">
+							<a href="#" class="blog-item-tag mb-3">neighbourhood</a>
+							<h4 class="blog-item-title mt-2 mb-3">Why Did Reed Krakoff Walk Away from His Brand?</h4>
+							<p class="blog-item-info my-3">AMELIA REYNOLDS | 2 DAY AGO</p>
+							<p class="blog-item-content-brief my-3">It is often frustrating to attempt to plan meals that are designed for one. Despite this fact, we are seeing more and more recipe books and Internet websites.</p>
+							<a href="#" class="btn btn-black btn-with-shadow btn-xl mt-3">discover</a>
+						</div>
+					</div>
+				</div>
+
+        <div class="blog-post-item">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="/images/blog/bl4.jpg" class="img-fluid blog-item-img" alt="">
+						</div>
+						<div class="col-md-6 blog-item-text">
+							<a href="#" class="blog-item-tag mb-3">fashion</a>
+							<h4 class="blog-item-title mt-2 mb-3">Why Did Reed Krakoff Walk Away from His Brand?</h4>
+							<p class="blog-item-info my-3">LEWIS BENNETT | 3 DAY AGO</p>
+							<p class="blog-item-content-brief my-3">Are you the parent of a teenager, namely a female teen? If you are, has your teen ever mentioned entering into a beauty pageant before?</p>
+							<a href="#" class="btn btn-black btn-with-shadow btn-xl mt-3">discover</a>
+						</div>
+					</div>
+				</div>
 
 			</div>
+
+
 		</div>
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <ul class="blog-pagination">
+          <li>
+            <a href="/blog"><span>1</span></a>
+          </li>
+          <li>
+            <a href="/blog">2</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 	</div>
-	<!-- /contact form -->
+</section>
