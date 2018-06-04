@@ -1,137 +1,143 @@
-<!-- Header -->
-	<header>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container-fluid">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img src="/images/home/ldg-logo-gold.png" class="navbar-logo-l" alt="Lighthouse Development">
+			<img src="/images/home/ldg-logo.png" class="navbar-logo-s" alt="Lighthouse Development">
+		</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#about">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#services">CUSTOM BUILD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/#portfolio">COMMERCIAL</a>
+        </li>
+        <li class="nav-item nav-item-hover-dropdown">
+          <button class="nav-link nav-item-drop-button">SMARTHOME SYSTEM</button>
+          <div class="nav-item-dropdown-content">
+            <div class="nav-item-dropdown-content-transparent"></div>
+            <div class="nav-item-dropdown-content-link">
+              <a href="#">Adolfburgh</a>
+              <a href="#">North Tomasa</a>
+              <a href="#">East Earlene</a>
+              <a href="#">West Bryanaborough</a>
+              <a href="#">New Arden</a>
+              <a href="#">New Elvie</a>
+            </div>
+          </div>
+        </li>
+				<li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/blog">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="/contact">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-		<!-- Nav -->
-		<nav id="nav" class="navbar">
-			<div class="container">
+<header class="masthead-subpage text-white d-flex" style="background-image: url('/images/blogin/blogin-header.png')">
+  <div class="container masthead-container">
+    <div class="row">
+      <div class="col-lg-4 masthead-content">
+        <h1 class="px-5 my-4">
+          <strong>Blog</strong>
+        </h1>
+      </div>
+      <div class="col-lg-8 masthead-content">
+        <p class="px-5 py-2 mt-3">Est, ut dicis, inquit; Quae diligentissime contra Aristonem dicuntur a Chryippo. Ergo, inquit, tibi Q. Quod maxime efficit Theophrasti de beata vita liber, in quo multum admodum fortunae datur.</p>
+      </div>
+    </div>
+  </div>
+</header>
 
-				<div class="navbar-header">
-					<!-- Logo -->
-					<div class="navbar-brand">
-						<a href="/">
-							<img class="logo" src="/images/logo.png" alt="logo">
-						</a>
+<nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="/">Home</a></li>
+		<li class="breadcrumb-item"><a href="/">Blog</a></li>
+		<li class="breadcrumb-item active" aria-current="page">{{data.post.title}}</li>
+	</ol>
+</nav>
+
+<section id="#blog" class="py-5">
+	<div class="container blog-blogpage">
+		<div class="row">
+
+			<div class="col-lg-8">
+				<div class="blog-post-full">
+					<div class="blog-post-heading">
+						<h3>{{data.post.title}}</h3>
 					</div>
-					<!-- /Logo -->
-
-					<!-- Collapse nav button -->
-					<div class="nav-collapse">
-						<span></span>
+					<div class="blog-post-info row">
+						<div class="blog-post-info-avatar col-2">
+							<img src="/images/blogin/writer.png" alt="avatar">
+						</div>
+						<div class="blog-post-info-detail col-12 col-lg-3">
+							<p class="blog-post-info-detail-author">BY {{data.post.author.name.first}} {{data.post.author.name.last}}</p>
+							<p class="blog-post-info-detail-time">{{date data.post.publishedDate}}</p>
+						</div>
+						<div class="blog-post-info-detail col-4 col-lg-3">
+							<a href="{{categoryUrl data.post.categories.0.name}}" class="blog-item-tag">{{data.post.categories.0.name}}</a>
+						</div>
 					</div>
-					<!-- /Collapse nav button -->
+
+					<div class="blog-post-content">
+						{{{data.post.content.extended}}}
+					</div>
 				</div>
 
-				<!--  Main navigation  -->
-				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><a href="/#home">首页</a></li>
-					<li><a href="/#portfolio">服务与产品</a></li>
-					<li><a href="/#category">解决方案</a></li>
-					<li><a href="/#features">团队优势</a></li>
-					<li><a href="/blog">最新资讯</a></li>
-					<li><a href="#footer">联系我们</a></li>
-					<!-- <ul class="dropdown"> -->
-					<!-- <li><a href="blog-single.html">blog post</a></li> -->
-					<!-- </ul> -->
-				</ul>
-				<!-- /Main navigation -->
-
-			</div>
-		</nav>
-		<!-- /Nav -->
-
-		<!-- header wrapper -->
-		<div class="header-wrapper md-padding" >
-			<!-- style="padding-top: 8rem; padding-bottom: 8rem;" -->
-			<div class="bg-img" style="background-image: url('/images/blog.jpg'); background-repeat: no-repeat; background-position: 50% 20%; background-attachment: scroll;">
-				<div class="overlay"></div>
 			</div>
 
-			<div class="container ">
-				<h2 class="white-text">{{data.post.title}}</h2>
-				<ul class="breadcrumb">
-					<li class="breadcrumb-item"><a href="/">首页</a></li>
-					<li class="breadcrumb-item"><a href="/blog">最新资讯</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- /header wrapper -->
 
-	</header>
-	<!-- /Header -->
+			<div class="col-lg-4">
 
-	<!-- Blog -->
-	<div id="blog" class="section md-padding">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<!-- Aside -->
-				<aside id="aside" class="col-md-3 col-md-push-9">
-
-					<!-- Search -->
-					<div class="widget">
-						<div class="widget-search">
-							<form role="search" action="/blog" method="GET">
-
-									<input class="search-input" type="text" placeholder="搜索" id="keywords" name="keywords">
-									<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-
-							</form>
-						</div>
+				<div class="blog-recent-posts mb-4">
+					<h3>Recent Posts</h3>
+					<div class="blog-recent-posts-link">
+						<a href="#">6 Powerful Tips To Creating Testimonials</a>
+						<a href="#">Effective Advertising Pointers</a>
+						<a href="#">Advertise Advertise Advertise</a>
+						<a href="#">Truck Side Advertising Isn T It Time</a>
+						<a href="#">Direct Mail Advertising How I Made 47</a>
 					</div>
-					<!-- /Search -->
+				</div>
 
-					<!-- Category -->
-					<div class="widget">
-						<h3 class="title">类别目录</h3>
-						<div class="widget-category">
-							<a href="/blog">全部分类</a>
-							{{# each data.categories }}
-							<a href="{{categoryUrl key}}">{{name}}</a>
-							{{/each}}
-						</div>
-					</div>
-					<!-- /Category -->
-				</aside>
-				<!-- /Aside -->
+        <div class="blog-side-section">
+          <h4>categories</h4>
+          <div class="blog-categories-link">
+            <a href="#">Beauty</a>
+            <a href="#">Lifestyle</a>
+            <a href="#">Music</a>
+          </div>
+        </div>
 
-
-				<!-- Main -->
-				<main id="main" class="col-md-9 col-md-pull-3">
-					<div class="blog">
-						{{#if data.post.image}}
-						<div class="blog-img">
-							<img class="img-responsive" src="{{{cloudinaryUrl data.post.image crop='fit' }}}" alt="">
-						</div>
-						{{/if}}
-						<div class="blog-content">
-							<ul class="blog-meta">
-								{{#if data.post.author}}
-								<li><i class="fa fa-user"></i>{{data.post.author.name.first}} {{data.post.author.name.last}}</li>
-								{{/if}}
-								<li><i class="fa fa-clock-o"></i>{{date data.post.publishedDate}}</li>
-								{{#if data.post.categories}}<li><i class="fa fa-tags"></i>{{data.post.categories.0.name}}</li>{{/if}}
-								<!-- <li><i class="fa fa-comments"></i>57</li> -->
-							</ul>
-							<!-- <h3>{{data.post.title}}</h3> -->
-							<p>{{{data.post.content.extended}}}</p>
-						</div>
-
-
-					</div>
-				</main>
-				<!-- /Main -->
-
-				<a class="btn main-btn" href="/blog">返回</a>
-
+        <div class="blog-side-section">
+          <h4>tags</h4>
+          <div class="blog-side-tags">
+            <a href="#" class="blog-item-tag">travel</a>
+            <a href="#" class="blog-item-tag">life style</a>
+            <a href="#" class="blog-item-tag">fashion</a>
+            <a href="#" class="blog-item-tag">art</a>
+            <a href="#" class="blog-item-tag">food</a>
+            <a href="#" class="blog-item-tag">beauty</a>
+            <a href="#" class="blog-item-tag">style</a>
+          </div>
+        </div>
 			</div>
-			<!-- /Row -->
+
 
 		</div>
-		<!-- /Container -->
 
 	</div>
-	<!-- /Blog -->
+</section>

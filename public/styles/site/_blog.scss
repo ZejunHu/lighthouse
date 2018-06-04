@@ -194,4 +194,50 @@
         }
       }
   }
+  .blog-post-full {
+    .blog-post-heading {
+      h3 {
+        font-family: PlayfairDisplay-Regular;
+        @media (min-width: 768px) {
+          font-size: 46px;
+          line-height: 62px;
+        }
+      }
+    }
+    .blog-post-info {
+      margin: 2rem auto;
+      .blog-post-info-avatar {
+        img {
+          height: 64px;
+          width: 64px;
+        }
+      }
+      .blog-post-info-detail {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        .blog-post-info-detail-author {
+          font-family: overpass-bold;
+        }
+        .blog-post-info-detail-time {
+          font-family: overpass-regular;
+        }
+      }
+
+    }
+    .blog-post-content {
+      > p {
+        font-family: overpass-regular;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+      img {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1rem;
+        max-width: 100%;
+      }
+    }
+  }
 }
