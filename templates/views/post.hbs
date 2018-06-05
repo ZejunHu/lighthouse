@@ -97,6 +97,12 @@
 					</div>
 				</div>
 
+        <div class="blog-post-tag--end my-4">
+          {{#each data.post.categories}}
+            <a href="{{categoryUrl name}}"  class="blog-item-tag mr-3">{{name}}</a>
+          {{/each}}
+        </div>
+
 			</div>
 
 
@@ -136,8 +142,104 @@
         </div>
 			</div>
 
+      <div class="col-6 col-lg-4 order-lg-1 my-2">
+        <a href="#" class="blog-post-link--end">previous story</a>
+      </div>
+      <div class="col-6 col-lg-4 order-lg-3 text-right my-2">
+        <a href="#" class="blog-post-link--end">next story</a>
+      </div>
+      <div class="col-lg-4 order-lg-2 text-center my-2">
+        <p class="blog-post-link--end">share this article</p>
+        <div class="row">
+          <div class="offset-3 offset-sm-4 offset-lg-3 col-2 col-sm-1 col-lg-2">
+            <i class="fa fa-facebook-f"></i>
+          </div>
+          <div class="col-2 col-sm-1 col-lg-2">
+            <i class="fa fa-twitter"></i>
+          </div>
+          <div class="col-2 col-sm-1 col-lg-2">
+            <i class="fa fa-pinterest-p"></i>
+          </div>
+        </div>
+      </div>
+
 
 		</div>
 
 	</div>
+</section>
+
+<section class="pt-5">
+  <div class="container blog-related">
+    <h3 class="blog-related-heading mb-5">related blog</h3>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="blog-related-block">
+          <div class="mt-1 mb-4">
+            <a href="#" class="blog-item-tag">art</a>
+          </div>
+          <a class="blog-related-block-cover" href="#">
+            <img src="/images/blog/bl1.jpg" class="img-fluid p-1" alt="Commercial">
+            <div class="blog-related-caption">
+              <div class="blog-related-caption-content">
+                <div class="blog-related-caption-content-heading px-4">
+                  Why Did Reed Krakoff Walk Away from His Brand?
+                </div>
+                <div class="blog-related-caption-content-info p-4">
+                  CARRIE CRAWFORD | 2 MIN AGO
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="blog-related-block">
+          <div class="mt-1 mb-4">
+            <a href="#" class="blog-item-tag">neighborhood</a>
+          </div>
+          <a class="blog-related-block-cover" href="#">
+            <img src="/images/blog/bl3.jpg" class="img-fluid p-1" alt="Commercial">
+            <div class="blog-related-caption">
+              <div class="blog-related-caption-content">
+                <div class="blog-related-caption-content-heading px-4">
+                  Why Did Reed Krakoff Walk Away from His Brand?
+                </div>
+                <div class="blog-related-caption-content-info p-4">
+                  CARRIE CRAWFORD | 2 MIN AGO
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="blog-related-block">
+          <div class="mt-1 mb-4">
+            <a href="#" class="blog-item-tag">fashion</a>
+          </div>
+          <a class="blog-related-block-cover" href="#">
+            <img src="/images/blog/bl4.jpg" class="img-fluid p-1" alt="Commercial">
+            <div class="blog-related-caption">
+              <div class="blog-related-caption-content">
+                <div class="blog-related-caption-content-heading px-4">
+                  Why Did Reed Krakoff Walk Away from His Brand?
+                </div>
+                <div class="blog-related-caption-content-info p-4">
+                  CARRIE CRAWFORD | 2 MIN AGO
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a class="btn btn-black btn-with-shadow btn-xl js-scroll-trigger mt-5" href="#">view all</a>
+    </div>
+
+  </div>
 </section>

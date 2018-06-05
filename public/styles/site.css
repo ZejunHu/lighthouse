@@ -6449,8 +6449,9 @@ header.masthead-subpage {
       letter-spacing: 1px; } }
 
 .blog-homepage {
+  vertical-align: top;
+  display: block;
   min-height: 400px;
-  height: auto;
   position: relative; }
   @media (min-width: 992px) {
     .blog-homepage {
@@ -6633,6 +6634,76 @@ header.masthead-subpage {
   margin-right: auto;
   padding: 0 1rem;
   max-width: 100%; }
+
+.blog-blogpage .blog-post-link--end {
+  color: #EC1C24;
+  font-family: overpass-bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-transform: uppercase; }
+
+.blog-related .blog-related-heading {
+  text-align: center;
+  font-family: PlayfairDisplay-Bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.blog-related .blog-related-block-cover {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto; }
+  .blog-related .blog-related-block-cover .blog-related-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.63);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+    .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%); }
+      .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content .blog-related-caption-content-heading {
+        color: #232323;
+        padding: 0 15px;
+        font-family: PlayfairDisplay-Regular;
+        font-size: 24px;
+        line-height: 32px; }
+      .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content .blog-related-caption-content-info {
+        color: #EC1C24;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: overpass-bold;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+  .blog-related .blog-related-block-cover:hover .blog-related-caption {
+    opacity: 1; }
+  .blog-related .blog-related-block-cover:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+    .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content .blog-related-caption-content-heading {
+      color: #232323;
+      padding: 0 15px;
+      font-family: PlayfairDisplay-Regular;
+      font-size: 24px;
+      line-height: 32px; }
+    .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content .blog-related-caption-content-info {
+      font-size: 12px;
+      font-weight: 600;
+      font-family: overpass-bold;
+      text-transform: uppercase;
+      letter-spacing: 1px; } }
 
 footer {
   padding-top: 4rem; }
