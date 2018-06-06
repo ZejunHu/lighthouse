@@ -6039,7 +6039,7 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important; } }
 
 @font-face {
-  font-family: "operpass-bold";
+  font-family: "overpass-bold";
   src: url("/fonts/Overpass/overpass-bold.otf"); }
 
 @font-face {
@@ -6729,3 +6729,46 @@ footer {
     color: #EC1C24; }
   .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
     content: ">"; }
+
+.form-control {
+  height: 50px; }
+  .form-control::-webkit-input-placeholder {
+    text-align: center;
+    color: #B09953;
+    font-family: overpass-bold;
+    font-size: 14px; }
+  .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+    color: #B09953;
+    font-family: overpass-bold;
+    font-size: 14px; }
+  .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+    color: #B09953;
+    font-family: overpass-bold;
+    font-size: 14px; }
+  .form-control:-ms-input-placeholder {
+    text-align: center;
+    color: #B09953;
+    font-family: overpass-bold;
+    font-size: 14px; }
+
+.ct {
+  font-family: overpass-semibold;
+  font-size: 20px;
+  line-height: 30px; }
+
+.play {
+  font-family: PlayfairDisplay-Bold;
+  font-size: 30px; }
+
+.info-heading {
+  font-family: playfair-bold;
+  font-size: 30px; }
+
+.contact-info {
+  font-family: overpass-regular;
+  font-size: 15px;
+  line-height: 32px; }

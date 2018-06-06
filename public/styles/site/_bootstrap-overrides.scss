@@ -55,3 +55,34 @@
     content: ">";
   }
 }
+
+.form-control {
+    height: 50px;
+    &::-webkit-input-placeholder {
+       text-align: center;
+       color: $gold;
+       font-family: overpass-bold;
+       font-size: 14px;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+       text-align: center;
+       color: $gold;
+       font-family: overpass-bold;
+       font-size: 14px;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       text-align: center;
+       color: $gold;
+       font-family: overpass-bold;
+       font-size: 14px;
+    }
+
+    &:-ms-input-placeholder {
+       text-align: center;
+       color: $gold;
+       font-family: overpass-bold;
+       font-size: 14px;
+    }
+}
