@@ -16,7 +16,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
+          scrollTop: (target.offset().top - 40)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -79,5 +79,10 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
+
+  if ( $(window).width() >= 992 ) {
+    var dropdownWidth = $('.nav-item-hover-dropdown').width();
+    $(".nav-item-dropdown-content").css({"width":dropdownWidth+"px"});
+  }
 
 })(jQuery); // End of use strict

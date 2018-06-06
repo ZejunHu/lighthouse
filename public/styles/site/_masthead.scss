@@ -73,13 +73,13 @@ header.masthead-subpage {
     margin-bottom: 30px;
   }
   h1 {
-    font-size: 58px;
     font-family: PlayfairDisplay-Bold;
+    font-size: 2rem;
   }
   p {
-    font-family: overpass-light;
-    font-weight: 300;
-    line-height: 30px;
+    font-family: overpass-semibold;
+    font-size: 15px;
+    line-height: 25px;
   }
   @media (min-width: 768px) {
     p {

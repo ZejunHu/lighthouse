@@ -3848,7 +3848,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(35, 35, 35, 0.25); }
-  
+
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -3868,7 +3868,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(35, 35, 35, 0.25); }
-  
+
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -3885,7 +3885,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(35, 35, 35, 0.25); }
-  
+
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -3914,7 +3914,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(35, 35, 35, 0.25); }
-  
+
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -6088,7 +6088,7 @@ html {
   height: 100%; }
 
 body {
-  font-family: overpass-extralight; }
+  font-family: overpass-regular; }
 
 hr.light {
   border-color: #fff; }
@@ -6212,21 +6212,21 @@ img::-moz-selection {
     display: none; }
   #mainNav .navbar-brand .navbar-logo-s {
     display: inline-block; }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > button.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > button.nav-link:focus {
     font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #212529; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:hover, #mainNav .navbar-nav > li.nav-item > button.nav-link:hover,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover, #mainNav .navbar-nav > li.nav-item > button.nav-link:focus:hover {
       color: #B09953; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active, #mainNav .navbar-nav > li.nav-item > button.nav-link.active,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active, #mainNav .navbar-nav > li.nav-item > button.nav-link:focus.active {
       color: #B09953 !important;
       background-color: transparent; }
-      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
-      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover, #mainNav .navbar-nav > li.nav-item > button.nav-link.active:hover,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover, #mainNav .navbar-nav > li.nav-item > button.nav-link:focus.active:hover {
         background-color: transparent; }
   @media (min-width: 992px) {
     #mainNav {
@@ -6238,14 +6238,14 @@ img::-moz-selection {
         display: inline-block; }
       #mainNav .navbar-brand .navbar-logo-s {
         display: none; }
-      #mainNav .navbar-nav > li.nav-item > a.nav-link {
+      #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > button.nav-link {
         font-size: 12px;
         padding: 0.3rem 0.8rem; }
-      #mainNav .navbar-nav > li.nav-item > a.nav-link,
-      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+      #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > button.nav-link,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > button.nav-link:focus {
         color: #fff; }
-        #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-        #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+        #mainNav .navbar-nav > li.nav-item > a.nav-link:hover, #mainNav .navbar-nav > li.nav-item > button.nav-link:hover,
+        #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover, #mainNav .navbar-nav > li.nav-item > button.nav-link:focus:hover {
           color: #B09953; }
       #mainNav.navbar-shrink {
         border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -6254,18 +6254,61 @@ img::-moz-selection {
           color: #B09953; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
             color: #b09953; }
-        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
-        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link, #mainNav.navbar-shrink .navbar-nav > li.nav-item > button.nav-link,
+        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav.navbar-shrink .navbar-nav > li.nav-item > button.nav-link:focus {
           color: #fff; }
-          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover, #mainNav.navbar-shrink .navbar-nav > li.nav-item > button.nav-link:hover,
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover, #mainNav.navbar-shrink .navbar-nav > li.nav-item > button.nav-link:focus:hover {
             color: #B09953; } }
   @media (min-width: 1200px) {
     #mainNav .navbar-brand img {
       max-height: 5.4rem; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > button.nav-link {
       font-size: 13px;
       padding: 0.5rem 1rem; } }
+
+.nav-item-hover-dropdown {
+  position: relative;
+  display: inline-block; }
+  .nav-item-hover-dropdown .nav-item-drop-button {
+    background-color: transparent;
+    border: none; }
+  .nav-item-hover-dropdown .nav-item-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1; }
+    .nav-item-hover-dropdown .nav-item-dropdown-content .nav-item-dropdown-content-link {
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+      .nav-item-hover-dropdown .nav-item-dropdown-content .nav-item-dropdown-content-link a {
+        background-color: #fff;
+        font-family: overpass-regular;
+        font-size: 12px;
+        color: #232323;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block; }
+        .nav-item-hover-dropdown .nav-item-dropdown-content .nav-item-dropdown-content-link a:hover {
+          background-color: #B09953; }
+  .nav-item-hover-dropdown:hover .nav-item-dropdown-content {
+    display: block; }
+  .nav-item-hover-dropdown:hover .nav-item-drop-button {
+    border-bottom: 4px solid #B09953; }
+  @media (min-width: 992px) {
+    .nav-item-hover-dropdown .nav-item-dropdown-content .nav-item-dropdown-content-transparent {
+      height: 37px;
+      width: 100%;
+      background-color: transparent; }
+    .nav-item-hover-dropdown .nav-item-dropdown-content .nav-item-dropdown-content-link a {
+      background-color: rgba(35, 35, 35, 0.7);
+      font-family: overpass-regular;
+      font-size: 12px;
+      color: #fff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block; }
+      .nav-item-hover-dropdown .nav-item-dropdown-content .nav-item-dropdown-content-link a:hover {
+        background-color: #B09953; } }
 
 header.masthead {
   padding-top: 10rem;
@@ -6329,12 +6372,12 @@ header.masthead-subpage {
     margin-top: 30px;
     margin-bottom: 30px; }
   header.masthead-subpage h1 {
-    font-size: 58px;
-    font-family: PlayfairDisplay-Bold; }
+    font-family: PlayfairDisplay-Bold;
+    font-size: 2rem; }
   header.masthead-subpage p {
-    font-family: overpass-light;
-    font-weight: 300;
-    line-height: 30px; }
+    font-family: overpass-semibold;
+    font-size: 15px;
+    line-height: 25px; }
   @media (min-width: 768px) {
     header.masthead-subpage p {
       font-size: 1.15rem; } }
@@ -6406,8 +6449,9 @@ header.masthead-subpage {
       letter-spacing: 1px; } }
 
 .blog-homepage {
+  vertical-align: top;
+  display: block;
   min-height: 400px;
-  height: auto;
   position: relative; }
   @media (min-width: 992px) {
     .blog-homepage {
@@ -6557,6 +6601,109 @@ header.masthead-subpage {
         color: #B09953;
         text-decoration: none;
         background-color: rgba(35, 35, 35, 0.3); }
+
+.blog-blogpage .blog-post-full .blog-post-heading h3 {
+  font-family: PlayfairDisplay-Regular; }
+  @media (min-width: 768px) {
+    .blog-blogpage .blog-post-full .blog-post-heading h3 {
+      font-size: 46px;
+      line-height: 62px; } }
+
+.blog-blogpage .blog-post-full .blog-post-info {
+  margin: 2rem auto; }
+  .blog-blogpage .blog-post-full .blog-post-info .blog-post-info-avatar img {
+    height: 64px;
+    width: 64px; }
+  .blog-blogpage .blog-post-full .blog-post-info .blog-post-info-detail {
+    font-size: 16px;
+    letter-spacing: 0.5px; }
+    .blog-blogpage .blog-post-full .blog-post-info .blog-post-info-detail .blog-post-info-detail-author {
+      font-family: overpass-bold; }
+    .blog-blogpage .blog-post-full .blog-post-info .blog-post-info-detail .blog-post-info-detail-time {
+      font-family: overpass-regular; }
+
+.blog-blogpage .blog-post-full .blog-post-content > p {
+  font-family: overpass-regular;
+  font-size: 16px;
+  letter-spacing: 0.5px; }
+
+.blog-blogpage .blog-post-full .blog-post-content img {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+  max-width: 100%; }
+
+.blog-blogpage .blog-post-link--end {
+  color: #EC1C24;
+  font-family: overpass-bold;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-transform: uppercase; }
+
+.blog-related .blog-related-heading {
+  text-align: center;
+  font-family: PlayfairDisplay-Bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.blog-related .blog-related-block-cover {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto; }
+  .blog-related .blog-related-block-cover .blog-related-caption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.63);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+    .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%); }
+      .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content .blog-related-caption-content-heading {
+        color: #232323;
+        padding: 0 15px;
+        font-family: PlayfairDisplay-Regular;
+        font-size: 24px;
+        line-height: 32px; }
+      .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content .blog-related-caption-content-info {
+        color: #EC1C24;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: overpass-bold;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+  .blog-related .blog-related-block-cover:hover .blog-related-caption {
+    opacity: 1; }
+  .blog-related .blog-related-block-cover:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+    .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content .blog-related-caption-content-heading {
+      color: #232323;
+      padding: 0 15px;
+      font-family: PlayfairDisplay-Regular;
+      font-size: 24px;
+      line-height: 32px; }
+    .blog-related .blog-related-block-cover .blog-related-caption .blog-related-caption-content .blog-related-caption-content-info {
+      font-size: 12px;
+      font-weight: 600;
+      font-family: overpass-bold;
+      text-transform: uppercase;
+      letter-spacing: 1px; } }
 
 footer {
   padding-top: 4rem; }
