@@ -6301,7 +6301,7 @@ img::-moz-selection {
     border-bottom: 4px solid #B09953; }
   @media (min-width: 992px) {
     .nav-item-hover-dropdown .nav-item-dropdown-content .nav-item-dropdown-content-transparent {
-      height: 37px;
+      height: 19px;
       width: 100%;
       background-color: transparent; }
     .nav-item-hover-dropdown .nav-item-dropdown-content .nav-item-dropdown-content-link a {
