@@ -6198,6 +6198,9 @@ img::-moz-selection {
   .btn-with-shadow:active, .btn-with-shadow:focus {
     box-shadow: 10px 10px 10px #868e96; }
 
+.navbar {
+  padding: 0.2rem 1rem; }
+
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
   background-color: #fff;
@@ -6207,7 +6210,7 @@ img::-moz-selection {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   #mainNav .navbar-brand img {
-    max-height: 3.6rem; }
+    max-height: 3.2rem; }
   #mainNav .navbar-brand .navbar-logo-l {
     display: none; }
   #mainNav .navbar-brand .navbar-logo-s {
@@ -6232,12 +6235,14 @@ img::-moz-selection {
     #mainNav {
       border-color: transparent;
       background-color: rgba(35, 35, 35, 0.7); }
-      #mainNav .navbar-brand img {
-        max-height: 5rem; }
-      #mainNav .navbar-brand .navbar-logo-l {
-        display: inline-block; }
-      #mainNav .navbar-brand .navbar-logo-s {
-        display: none; }
+      #mainNav .navbar-brand {
+        padding: 0; }
+        #mainNav .navbar-brand img {
+          max-height: 4rem; }
+        #mainNav .navbar-brand .navbar-logo-l {
+          display: inline-block; }
+        #mainNav .navbar-brand .navbar-logo-s {
+          display: none; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > button.nav-link {
         font-size: 12px;
         padding: 0.3rem 0.8rem; }
@@ -6262,7 +6267,7 @@ img::-moz-selection {
             color: #B09953; } }
   @media (min-width: 1200px) {
     #mainNav .navbar-brand img {
-      max-height: 5.4rem; }
+      max-height: 4.2rem; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link, #mainNav .navbar-nav > li.nav-item > button.nav-link {
       font-size: 13px;
       padding: 0.5rem 1rem; } }

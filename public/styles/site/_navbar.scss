@@ -1,4 +1,8 @@
 // Styling for the navbar
+.navbar {
+  padding: 0.2rem 1rem;
+}
+
 #mainNav {
   border-bottom: 1px solid fade-out($gray-900, .9);
   background-color: $white;
@@ -7,7 +11,7 @@
   @include transition-all;
   .navbar-brand {
     img {
-      max-height: 3.6rem;
+      max-height: 3.2rem;
     }
     .navbar-logo-l {
       display: none;
@@ -41,8 +45,9 @@
     border-color: transparent;
     background-color: rgba(35, 35, 35, 0.7);
     .navbar-brand {
+      padding: 0;
       img {
-        max-height: 5rem;
+        max-height: 4rem;
       }
       .navbar-logo-l {
         display: inline-block;
@@ -84,7 +89,7 @@
   @media (min-width: 1200px) {
     .navbar-brand {
       img {
-        max-height: 5.4rem;
+        max-height: 4.2rem;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link, .navbar-nav > li.nav-item > button.nav-link {
