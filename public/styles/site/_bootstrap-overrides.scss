@@ -14,11 +14,17 @@
 }
 
 .btn-l {
-  padding: 1.2rem 3.2rem;
+  padding: 0.8rem 1.8rem;
+  @media (min-width: 576px) {
+    padding: 1.2rem 3.2rem;
+  }
 }
 
 .btn-xl {
-  padding: 1.2rem 4rem;
+  padding: 0.8rem 1.8rem;
+  @media (min-width: 576px) {
+    padding: 1.2rem 4rem;
+  }
 }
 
 .btn-primary {

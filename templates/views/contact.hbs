@@ -85,35 +85,43 @@
 <section id="information" class="section-padding">
   <div class="container">
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4 px-4">
           <h2 class="info-heading">Contact</h2>
-          <p>9130 Leslie St, Suite 300
+          <p class="contact-info contact-info--special">9130 Leslie St, Suite 300
              <br>Richmond Hill, ON L4B 0B9</p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 px-4">
           <h2 class="info-heading">Contact us</h2>
-          <p class = "contact-info">Tel: (+1) 905-771-7326
+          <p class="contact-info">Tel: (+1) 905-771-7326
              <br>Richmond Hill, ON L4B 0B9</p>
         <a href="mailto:admin@lighthousedevelopment.com">admin@lighthousedevelopment.com</a>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 px-4">
           <h2 class="info-heading">Opening hours</h2>
-          <p class = "contact-info">Monday to Wednesday: 8:00AM – 5:30PM
+          <p class="contact-info">Monday to Wednesday: 8:00AM – 5:30PM
              <br>Thursday to Friday: 8:00AM – 8:00PM
              <br>Saturday: 9:00AM – 5:00PM
              <br>Sunday: closed
          </p>
-        <a href="mailto:admin@lighthousedevelopment.com">admin@lighthousedevelopment.com</a>
+
       </div>
     </div>
   </div>
 </section>
 
-<section id = "map" class="section-padding">
-<div class = "container">
+<div>
+  <div class = "container">
+    <div class="row mb-5">
+      <div class="col-6 col-md-4 col-lg-3">
+        <button type="button" class="btn btn-red btn-with-shadow btn-xl" id="show-map-btn" name="button">SHOW MAP</button>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <button type="button" class="btn btn-black btn-with-shadow btn-xl" id="hide-map-btn" name="button">SHOW MAP</button>
+      </div>
+    </div>
     <div class="map">
-        <div id="map" style="width:100%;height:400px;"></div>
-        <script>
+        <div id="contact-map" style="width:100%;height:60vh;"></div>
+        <!-- <script>
         function initMap() {
             var location = {lat:43.856400, lng:-79.386042};
             var options = {
@@ -122,7 +130,7 @@
             };
 
             // New map
-            var map = new google.maps.Map(document.getElementById('map'),options);
+            var map = new google.maps.Map(document.getElementById('contact-map'),options);
 
             // Add marker.
             var marker = new google.maps.Marker({
@@ -130,9 +138,8 @@
                 map:map
             });
         }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-35vM8NLSP_iMJuzyqb7fawpPzMe50Lw&callback=initMap"
-async defer></script>
+        </script> -->
+
     </div>
   </div>
 </div>
@@ -158,3 +165,8 @@ async defer></script>
     </div>
   </div>
 </section>
+
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-35vM8NLSP_iMJuzyqb7fawpPzMe50Lw"
+async defer></script>
+<script src="/js/gmap.js" async defer></script>
