@@ -6176,21 +6176,21 @@ img::-moz-selection {
   background-color: #EC1C24;
   border-color: #EC1C24; }
   .btn-red:hover, .btn-red:focus, .btn-red:active {
-    color: #e6e6e6;
-    background-color: #dc121a !important; }
+    color: #fff;
+    background-color: #232323 !important; }
 
 .btn-black {
   background-color: #232323;
   border-color: #232323; }
   .btn-black:hover, .btn-black:focus, .btn-black:active {
-    color: #e6e6e6;
-    background-color: #161616 !important; }
+    color: #fff;
+    background-color: #B09953 !important; }
 
 .btn-gold {
   background-color: #B09953;
   border-color: #B09953; }
   .btn-gold:hover, .btn-gold:focus, .btn-gold:active {
-    color: #e6e6e6;
+    color: #fff;
     background-color: #a08b49 !important; }
 
 .btn-with-shadow {

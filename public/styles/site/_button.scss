@@ -11,8 +11,8 @@
   &:hover,
   &:focus,
   &:active {
-    color: darken($white, 10%);
-    background-color: darken($red, 5%) !important;
+    color: $white;
+    background-color: $black !important;
   }
 }
 
@@ -22,8 +22,8 @@
   &:hover,
   &:focus,
   &:active {
-    color: darken($white, 10%);
-    background-color: darken($black, 5%) !important;
+    color: $white;
+    background-color: $gold !important;
   }
 }
 
@@ -33,7 +33,7 @@
   &:hover,
   &:focus,
   &:active {
-    color: darken($white, 10%);
+    color: $white;
     background-color: darken($gold, 5%) !important;
   }
 }
