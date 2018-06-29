@@ -14,7 +14,16 @@
     color: $white;
     background-color: $black !important;
   }
+  &--hover-not-black {
+    &:hover,
+    &:focus,
+    &:active {
+      color: darken($white, 10%);;
+      background-color: darken($red, 5%) !important;
+    }
+  }
 }
+
 
 .btn-black {
   background-color: $black;

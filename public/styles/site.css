@@ -6178,6 +6178,9 @@ img::-moz-selection {
   .btn-red:hover, .btn-red:focus, .btn-red:active {
     color: #fff;
     background-color: #232323 !important; }
+  .btn-red--hover-not-black:hover, .btn-red--hover-not-black:focus, .btn-red--hover-not-black:active {
+    color: #e6e6e6;
+    background-color: #dc121a !important; }
 
 .btn-black {
   background-color: #232323;
